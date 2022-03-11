@@ -6,6 +6,7 @@
 .contriner {
     width: 100%;
     height: 650px;
+
     background-image: url(img/atee.jpg);
     background-size: cover;
 
@@ -13,6 +14,7 @@
 
 }
 
+/* header */
 nav {
     width: 100%;
     height: 50px;
@@ -35,7 +37,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: rgb(0, 138, 202);
+    background-color: rgb(0, 117, 172);
     border-radius: 15px;
 }
 
@@ -46,7 +48,7 @@ nav ul li a {
 }
 
 nav img {
-    width: 50px;
+    width: 100px;
     float: left;
     margin-left: 500px;
 }
@@ -65,6 +67,8 @@ h5 {
 
 }
 
+/* end header */
+/* body-bullet */
 .box-body {
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -76,7 +80,7 @@ h5 {
 
 .bullet {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px;
     margin: 0 auto;
 }
@@ -87,11 +91,16 @@ h5 {
 
 }
 
-.bullet h5 {
-    color: rgb(0, 106, 192);
-    padding: 33px;
+.box h5 {
+    color: rgb(0, 117, 172);
+    text-align: center;
+    color: rgb(0, 117, 172);
+
+    margin: 5px 0px 20px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
+/* abouts-me */
 .abouts {
     display: flex;
     justify-content: space-around;
@@ -113,7 +122,7 @@ h5 {
 
 .my-intro h2 {
     padding: 90px 30px 30px;
-    color: rgb(0, 94, 182);
+    color: rgb(0, 117, 172);
 }
 
 .intro {
@@ -132,8 +141,143 @@ h5 {
 }
 
 .icon img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 
     padding: 10px;
+}
+
+.icon a {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text h1 {
+    text-align: center;
+    color: rgb(0, 117, 172);
+
+    margin: 5px 0px 20px 0px;
+    padding: 50px 0px 0px 0px;
+}
+
+.text h4 {
+    text-align: center;
+    color: rgb(75, 75, 75);
+    margin: 100px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
+    font-size: 28px;
+}
+
+/* my skill  */
+.contriner-skill {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px 0px 50px 0px;
+
+}
+
+.contriner-skill1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.skill {
+    background: rgb(201, 201, 201);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    border-radius: 15px;
+
+
+}
+
+.skill h4 {
+    padding: 30px;
+    text-align: center;
+    color: rgb(5, 5, 5);
+}
+
+
+
+@keyframes growProgressBar {
+    0%, 33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        /* --pgPercentage: var(--value); */
+    }
+}
+
+
+/* .contriner-skill h4 {
+    display: flex;
+    justify-content: space-around;
+
+
+} */
+
+/* @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+} */
+/* progess bar */
+div[role="progressbar"] {
+    --size: 12rem;
+    --fg: rgb(0, 118, 172);
+
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(185, 185, 185) 90%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-size: calc(var(--size) / 5);
+    color: rgb(78, 78, 78)
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/* progress bar end */
+/* work-exprience */
+
+.work {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px 50px 0px;
+}
+
+
+
+.work1 img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    justify-content: space-around;
+
+
+}
+
+.work1 a {
+    text-align: center;
+    padding: 100px;
+    justify-content: space-around;
 }
