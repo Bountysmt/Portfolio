@@ -259,25 +259,116 @@ div[role="progressbar"]::before {
 /* progress bar end */
 /* work-exprience */
 
-.work {
+.work h1 {
+    text-align: center;
+    color: rgb(0, 103, 199);
+    padding: 100px;
+    margin: 0 auto;
+}
+
+.work-exprence {
     display: flex;
     justify-content: space-around;
-    padding: 30px 0px 50px 0px;
+    width: 1080px;
+    margin: 0 auto;
+
 }
 
-
-
-.work1 img {
+.box img {
     width: 50px;
     height: 50px;
-    padding: 10px;
-    justify-content: space-around;
-
-
 }
 
-.work1 a {
+.box h3 {
+    color: rgb(0, 119, 255);
+}
+
+.box a {
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+}
+
+/* contact */
+.contact-text h1 {
+    padding: 30px;
+    margin: 0 auto;
     text-align: center;
-    padding: 100px;
-    justify-content: space-around;
+    color: rgb(0, 120, 233);
 }
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 0px 0px;
+    width: 1080px;
+    margin: 0 auto;
+    margin-left: 300px;
+
+}
+
+.my-project {
+
+    padding: 0px 0px 0px 10px;
+    margin: 0 auto;
+}
+
+.my-project h1 {
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.my-project img {
+    margin: auto;
+    width: 350px;
+    height: 500px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo {
+    /* padding: 10px 0px 5000px 0px; */
+    /* margin: 0 auto */
+}
+
+.contact-logo {
+    padding: 20px;
+}
+
+/* responsive */
+/* @media only screen and (max-width:1000px) {
+    .banner1 {
+        display: block;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .banner2 {
+        display: none;
+    }
+
+    .header {
+        background-color: darkcyan;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .banner {
+        display: none;
+    }
+
+    .banner1 {
+        display: none;
+    }
+
+    .banner2 {
+        display: block;
+    }
+
+    .header {
+        background-color: rgb(0, 255, 0);
+    }
+} */
