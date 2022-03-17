@@ -6,17 +6,22 @@
 .contriner {
     width: 100%;
     height: 650px;
-
     background-image: url(img/atee.jpg);
     background-size: cover;
+    object-fit: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 
+}
 
-
+.navbar {
+    display: none;
 }
 
 /* header */
 nav {
     width: 100%;
+
     height: 50px;
     line-height: 50px;
 }
@@ -337,38 +342,27 @@ div[role="progressbar"]::before {
 }
 
 /* responsive */
-/* @media only screen and (max-width:1000px) {
-    .banner1 {
+
+@media only screen and (max-width:500px) {
+    .contriner {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 30px;
+
+    }
+
+
+
+    nav ul li {
+        display: none;
+    }
+
+    nav img {
+        margin: 0;
+    }
+
+    .navbar {
         display: block;
-    }
 
-    .banner {
-        display: none;
-    }
-
-    .banner2 {
-        display: none;
-    }
-
-    .header {
-        background-color: darkcyan;
     }
 }
-
-@media only screen and (max-width:768px) {
-    .banner {
-        display: none;
-    }
-
-    .banner1 {
-        display: none;
-    }
-
-    .banner2 {
-        display: block;
-    }
-
-    .header {
-        background-color: rgb(0, 255, 0);
-    }
-} */
